@@ -1,0 +1,25 @@
+p{
+    font-family: Montserrat;
+    font-size: 1.25rem;
+}
+body {
+    height: 100vh;
+    background: #03dfff;
+    background: linear-gradient(139deg, #03ddffcb 0%, #ff0381b6 90%);
+}
+
+#list_input {
+    font-size: 50px;
+    border-width: 0 0 0 0;
+}
+
+#submitbtn {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: staatliches;
+    font-size: 5.5rem;
+}
