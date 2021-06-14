@@ -8,8 +8,16 @@ var identity="task_id",count=1;
     var inpt=document.getElementById("list_input");
     var array=[];
     var count=1;
+
+    inpt.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("submitbtn").click();
+        }
+      });
+
     btn_element.addEventListener("click",addtask);//func
-    
+
    //------------------------------------------------------------------//
     function addtask(){
         if(inpt.value){    // if input is not empty only then 
@@ -24,20 +32,21 @@ var identity="task_id",count=1;
             array.push(object);
             //in Dom//
             var Para=document.createElement('p');
-
             Para.innerText=object.para;
             Para.className="task"+count.toString();
             Div.appendChild(Para);
             Para.setAttribute.display='inline-block';
             var check=document.createElement('button');
-            
-            check.innerText="✅";
+            check.setAttribute.type="button";
+            check.className="btn btn-success fas fa-check-circle side1";
+            //check.innerText="✅";
             check.setAttribute.display='inline-block';
-            check.className="Tick";
             var uncheck=document.createElement('button');
-            uncheck.innerText="❌";
+            uncheck.setAttribute.type="button";
+            uncheck.className="btn btn-danger fas fa-times-circle side2";
+            //<i class="fas fa-check"></i>
+            //uncheck.innerText="❌";
             uncheck.setAttribute.display='inline-block';
-            uncheck.className="Cross";
             Div.appendChild(check),Div.appendChild(uncheck);
             console.log(array);
             //--------------------------------------------------------------------//
