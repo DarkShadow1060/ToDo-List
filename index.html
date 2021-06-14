@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="https://kit.fontawesome.com/14a1f0c462.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap" rel="stylesheet">
+
     <title>To-Do List</title>
         
 </head>
@@ -26,25 +30,33 @@
     <div class="main-block container-fluid">
 
         <div class="inner-block1" id="in_blk1">
-            <h1> TASK LIST </h1>
-            <p>Add task to your list by typing to the right and Pressing enter.
-                You may then view pending task below</p>
+            <h1 class="centering"> TASK LIST </h1>
+            <h3 class="centering">Add task to your list by typing to the right and Pressing Enter</h3>
+                <h3 class="centering">You may then view pending Task Below</h3>
             <br>
+            <br>
+            <h2>On Going</h2>
+           
 
 
         </div>
         <div class="inner-block2" id="in_blk2">
+            <hr>
             <h2>Completed</h2>
+            <hr>
         </div>
         <div class="inner-block3" id="in_blk2">
             
-            <textarea id="list_input" type="text" placeholder="I need to..." size="">
+            <div class="input-group mb-3">
+                <input  id="list_input" type="text" class="form-control" placeholder="I need to..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button type="button" id="submitbtn" class="btn btn-primary">Submit </button> 
+              </div>
 
-            <button id="submitbtn"> Submit </button>
+            
+        </div>
+        
 
         </div>
-
-    </div>
 </body>
 <script src="script.js">
 
